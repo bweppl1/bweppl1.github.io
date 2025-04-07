@@ -1,4 +1,4 @@
-import React from 'react';
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -11,7 +11,7 @@ const Home = () => {
             <div className="card-body">
               <h5 className="card-title">Project 1</h5>
               <p className="card-text">Short description of the project or blog post.</p>
-              <a href="/projects" className="btn btn-primary">View Project</a>
+              <Link to="/projects" className="btn btn-primary">View Project</Link>
             </div>
           </div>
         </div>
@@ -21,7 +21,7 @@ const Home = () => {
             <div className="card-body">
               <h5 className="card-title">Project 2</h5>
               <p className="card-text">Short description of the project or blog post.</p>
-              <a href="/projects" className="btn btn-primary">View Project</a>
+              <Link to="/projects" className="btn btn-primary">View Project</Link>
             </div>
           </div>
         </div>
@@ -31,7 +31,7 @@ const Home = () => {
             <div className="card-body">
               <h5 className="card-title">Project 3</h5>
               <p className="card-text">Short description of the project or blog post.</p>
-              <a href="/projects" className="btn btn-primary">View Project</a>
+              <Link to="/projects" className="btn btn-primary">View Project</Link>
             </div>
           </div>
         </div>

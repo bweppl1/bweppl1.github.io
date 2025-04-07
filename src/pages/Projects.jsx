@@ -1,4 +1,4 @@
-import React from 'react';
+import { Link } from "react-router-dom";
 
 const Projects = () => {
   const projects = [
@@ -7,6 +7,7 @@ const Projects = () => {
       description: 'A brief description of your first project.',
       technologies: ['React', 'JavaScript', 'Bootstrap'],
       link: 'https://github.com/yourusername/project1', // Replace with actual link
+      //image: 'pathtoimage.jpg',
     },
     {
       title: 'Project 2',

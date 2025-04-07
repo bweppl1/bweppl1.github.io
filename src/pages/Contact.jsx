@@ -9,18 +9,16 @@ const Contact = () => {
 
   const [submitted, setSubmitted] = useState(false);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     setSubmitted(true);
-    // Normally here you would send the data to a server or email service
-    // For now, we'll just show a success message
     console.log(formData);
   };
 
@@ -29,7 +27,6 @@ const Contact = () => {
       <h2>Contact</h2>
       <p>If you have any questions, feel free to reach out!</p>
 
-      {/* Contact Form */}
       {!submitted ? (
         <form onSubmit={handleSubmit}>
           <div className="mb-3">
@@ -64,7 +61,7 @@ const Contact = () => {
               className="form-control"
               id="message"
               name="message"
-              rows={4}
+              rows="4"
               value={formData.message}
               onChange={handleChange}
               required
@@ -79,13 +76,11 @@ const Contact = () => {
         </div>
       )}
 
-      {/* Social Links */}
       <div className="mt-4">
         <h4>Find Me Online</h4>
         <ul>
           <li><a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub</a></li>
           <li><a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-          {/* Add other social media or contact links */}
         </ul>
       </div>
     </div>
