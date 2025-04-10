@@ -1,10 +1,11 @@
 import { Link } from 'react-router-dom';
+import '../index.css';
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div className="container">
-        <Link className="navbar-brand" to="/">My Portfolio</Link>
+    <nav className="navbar navbar-expand-lg navbar-dark py-0">
+      <div className="container py-0">
+        <Link className="navbar-brand" to="/">Brent Weppler</Link>
         <button
           className="navbar-toggler"
           type="button"

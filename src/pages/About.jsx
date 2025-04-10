@@ -1,3 +1,4 @@
+import '../index.css';
 
 const About = () => {
   return (
@@ -6,39 +7,42 @@ const About = () => {
       <section className="mb-5">
         <h2>About Me</h2>
         <p>
-          Hi, I'm [Your Name], a passionate software developer with a strong
-          background in [your field of study/technology]. I specialize in creating
-          user-friendly web applications and enjoy learning new technologies.
+          Hi, I'm Brent Weppler.
         </p>
       </section>
 
       {/* Skills Section */}
-      <section className="mb-5">
-        <h3>Skills</h3>
+      <section className="mb-1">
+        <h3>Strong Skills</h3>
         <ul className="list-group">
-          <li className="list-group-item">JavaScript / TypeScript</li>
-          <li className="list-group-item">React / React Native</li>
-          <li className="list-group-item">Node.js</li>
-          <li className="list-group-item">Bootstrap / CSS / HTML</li>
-          <li className="list-group-item">Git / GitHub</li>
-          <li className="list-group-item">SQL / NoSQL</li>
           <li className="list-group-item">Python</li>
-          {/* Add or remove skills as needed */}
+          <li className="list-group-item">Java</li>
+          <li className="list-group-item">Git / GitHub</li>
+          <li className="list-group-item">Linux / Windows / Android</li>
+        </ul>
+        <h3>Developing Skills</h3>
+        <ul className="list-group">
+          <li className="list-group-item">HTML / CSS / JavaScript / Bootstrap</li>
+          <li className="list-group-item">Spring Boot</li>
+          <li className="list-group-item">React</li>
+          <li className="list-group-item">SQL / NoSQL</li>
         </ul>
       </section>
+
+
 
       {/* Experience Section */}
       <section className="mb-5">
         <h3>Experience</h3>
         <p>
-          I have worked on several projects involving [briefly describe your experience or projects].
+          I have worked with Python and Java most extensively.
         </p>
         <ul>
           <li>
-            <strong>Project 1:</strong> Description of your first project.
+            <strong>Project 1:</strong> Description of your project 1.
           </li>
           <li>
-            <strong>Project 2:</strong> Description of your second project.
+            <strong>Project 2:</strong> Description of your project 2.
           </li>
           {/* Add more projects/experience */}
         </ul>
@@ -51,9 +55,9 @@ const About = () => {
           Feel free to get in touch with me for collaboration or just to say hi!
         </p>
         <ul>
-          <li>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></li>
-          <li>GitHub: <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">github.com/yourusername</a></li>
-          <li>LinkedIn: <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">linkedin.com/in/yourusername</a></li>
+          <li>Email: <a href="mailto:brentweppler@gmail.com">brentweppler@gmail.com</a></li>
+          <li>GitHub: <a href="https://github.com/bweppl1" target="_blank" rel="noopener noreferrer">github.com/bweppl1</a></li>
+          <li>LinkedIn: <a href="https://www.linkedin.com/in/brent-weppler" target="_blank" rel="noopener noreferrer">linkedin.com/in/brent-weppler</a></li>
           {/* Add other contact info or social links */}
         </ul>
       </section>

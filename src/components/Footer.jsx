@@ -1,7 +1,9 @@
+import '../index.css';
+
 const Footer = () => {
     return (
-      <footer className="bg-dark text-white text-center py-4 mt-auto">
-        <p>&copy; {new Date().getFullYear()} My Portfolio. All rights reserved.</p>
+      <footer className="bg-black text-white text-end py-3 px-3 mt-auto">
+        <p>&copy; {new Date().getFullYear()} Brent Weppler</p>
       </footer>
     );
   };

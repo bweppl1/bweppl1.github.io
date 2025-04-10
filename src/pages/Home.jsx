@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import '../index.css';
 
 const Home = () => {
   return (
@@ -10,7 +11,7 @@ const Home = () => {
             <img src="path-to-image.jpg" className="card-img-top" alt="Project 1" />
             <div className="card-body">
               <h5 className="card-title">Project 1</h5>
-              <p className="card-text">Short description of the project or blog post.</p>
+              <p className="card-text">Description.</p>
               <Link to="/projects" className="btn btn-primary">View Project</Link>
             </div>
           </div>
@@ -20,7 +21,7 @@ const Home = () => {
             <img src="path-to-image.jpg" className="card-img-top" alt="Project 2" />
             <div className="card-body">
               <h5 className="card-title">Project 2</h5>
-              <p className="card-text">Short description of the project or blog post.</p>
+              <p className="card-text">Description.</p>
               <Link to="/projects" className="btn btn-primary">View Project</Link>
             </div>
           </div>
@@ -30,7 +31,7 @@ const Home = () => {
             <img src="path-to-image.jpg" className="card-img-top" alt="Project 3" />
             <div className="card-body">
               <h5 className="card-title">Project 3</h5>
-              <p className="card-text">Short description of the project or blog post.</p>
+              <p className="card-text">Description.</p>
               <Link to="/projects" className="btn btn-primary">View Project</Link>
             </div>
           </div>
@@ -41,14 +42,14 @@ const Home = () => {
       <section className="mb-4">
         <h2>About Me</h2>
         <p>
-          Brief intro about yourself, your background, and what you do.
+          Brief about me.
         </p>
         <h3>Skills & Experience</h3>
         <ul>
-          <li>Skill 1</li>
-          <li>Skill 2</li>
-          <li>Skill 3</li>
-          <li>Experience: Description of your experience in tech, or relevant industries.</li>
+          <li>Full Stack Development</li>
+          <li>Machine Learning</li>
+          <li>Database Management</li>
+          <li>Experience: 404</li>
         </ul>
       </section>
     </div>

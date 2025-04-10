@@ -10,18 +10,16 @@ import Contact from './pages/Contact.jsx';
 const App = () => {
   return (
     <div className="d-flex flex-column min-vh-100">
-      <Router basename={process.env.PUBLIC_URL}>
-        <Navbar />
-        <main className="flex-fill container mt-4">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-        </main>
-        <Footer />
-      </Router>
+      <Navbar />
+      <main className="flex-fill container mt-5">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </main>
+      <Footer />
     </div>
   );
 };
