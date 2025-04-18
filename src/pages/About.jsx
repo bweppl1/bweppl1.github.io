@@ -1,35 +1,40 @@
 import '../index.css';
 
 const About = () => {
+  const skills = [
+    { name: 'Python', icon: 'fab fa-python' },
+    { name: 'Java', icon: 'fab fa-java'},
+    { name: 'JavaScript', icon: 'fab fa-js-square' },
+    { name: 'React', icon: 'fab fa-react' },,
+    { name: 'CSS', icon: 'fab fa-css3-alt' },
+    { name: 'HTML', icon: 'fab fa-html5' },
+    { name: 'Bootstrap', icon: 'fab fa-bootstrap' },
+    { name: 'Git', icon: 'fab fa-git' },
+    { name: 'MongoDB', icon: 'fas fa-database' },
+  ];
+
   return (
-    <div className="container mt-5">
+    <div className="container mt-2">
       {/* Introduction Section */}
-      <section className="mb-5">
-        <h2>About Me</h2>
-        <p>
-          Hi, I'm Brent Weppler.
-        </p>
-      </section>
-
-      {/* Skills Section */}
       <section className="mb-1">
-        <h3>Strong Skills</h3>
-        <ul className="list-group">
-          <li className="list-group-item">Python</li>
-          <li className="list-group-item">Java</li>
-          <li className="list-group-item">Git / GitHub</li>
-          <li className="list-group-item">Linux / Windows / Android</li>
-        </ul>
-        <h3>Developing Skills</h3>
-        <ul className="list-group">
-          <li className="list-group-item">HTML / CSS / JavaScript / Bootstrap</li>
-          <li className="list-group-item">Spring Boot</li>
-          <li className="list-group-item">React</li>
-          <li className="list-group-item">SQL / NoSQL</li>
-        </ul>
+        <h2>About Me</h2>
+        <p>Hi, I'm Brent Weppler.</p>
       </section>
 
-
+      {/* Updated Skills Section with 3x3 grid */}
+      <section className="mb-1">
+        <h3>Skills</h3>
+        <div className="row">
+          {skills.map((skill, index) => (
+            <div className="col-3 mb-1" key={index}>
+              <div className="d-flex align-items-center">
+                <i className={`${skill.icon} fa-3x mr-3`} /> {/* Icon */}
+                <span className="p-2">{skill.name}</span> {/* Technology Name */}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
 
       {/* Experience Section */}
       <section className="mb-5">
@@ -39,10 +44,10 @@ const About = () => {
         </p>
         <ul>
           <li>
-            <strong>Project 1:</strong> Description of your project 1.
+            <strong>Artificial Intelligence and Machine Learning:</strong> Using a data set of enviornmental and public health data to create and optimize a model that predicts public health scores.
           </li>
           <li>
-            <strong>Project 2:</strong> Description of your project 2.
+            <strong>Python Algorithms:</strong> Created a python program to simulate a delivery service. Routed optimized pathing for a simulated delivery service to meet all constraints and delivery deadlines.
           </li>
           {/* Add more projects/experience */}
         </ul>

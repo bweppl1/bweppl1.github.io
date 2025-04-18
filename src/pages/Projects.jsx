@@ -4,11 +4,11 @@ import '../index.css';
 const Projects = () => {
   const projects = [
     {
-      title: 'Project 1',
-      description: 'A brief description of your first project.',
-      technologies: ['React', 'JavaScript', 'Bootstrap'],
-      link: 'https://github.com/yourusername/project1', // Replace with actual link
-      //image: 'pathtoimage.jpg',
+      title: 'Delivery Algorithm',
+      description: 'A Python program that simulates package delivery to challenge the TSP.',
+      technologies: ['Python'],
+      link: 'https://github.com/bweppl1/C950',
+      //image: '/public/images/project_01_thumbnail.png',
     },
     {
       title: 'Project 2',
@@ -26,7 +26,7 @@ const Projects = () => {
   ];
 
   return (
-    <div className="container mt-5">
+    <div className="container mt-2">
       <h2>Projects</h2>
       <p>Here are some of the projects I have worked on:</p>
 

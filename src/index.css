@@ -99,9 +99,8 @@
   }
   
   .btn:hover {
-    background-color: #FFF;
+    background-color: #2e2e2e;
     border: 3px;
-    color: #000;
     border-color: #000;
   }
 
@@ -112,8 +111,6 @@
     font-size: 1rem;
     color: #fff;
     background-color: #000000;
-    border: none;
-    border-radius: 0px;
     text-align: center;
   }
   
@@ -134,7 +131,7 @@
   
   @media (max-width: 768px) {
     .col-md-4 {
-      flex: 1 1 100%; /* Full width for smaller screens */
+      flex: 1 1 95%; /* Full width for smaller screens */
     }
   }
   
@@ -148,7 +145,7 @@
   }
   
   ul li {
-    margin-bottom: 10px;
+    margin-bottom: 0px;
   }
   
   /* Responsive Typography */
