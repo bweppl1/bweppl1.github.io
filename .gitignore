@@ -17,7 +17,3 @@ pnpm-debug.log*
 # IDE/editor config
 .vscode/
 .idea/
-
-# system files
-Thumbs.dbnode_modules/
-.DS_Store
