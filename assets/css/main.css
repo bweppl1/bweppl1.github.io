@@ -115,6 +115,16 @@ body {
   box-sizing: border-box;
 }
 
+a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  color: #A00;
+}
+
 .navbar {
   color: #000;
   padding: 5px;
@@ -181,20 +191,38 @@ section {
 }
 
 nav a {
+  position: relative;
   font-family: "Source Sans 3", sans-serif;
   font-size: 16px;
   font-weight: 500;
   text-decoration: none;
   color: #555;
   padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 nav a:hover {
+  color: #000;
+}
+
+nav a:hover::before {
+  position: absolute;
+  left: 0;
+  content: "•";
+  color: black;
+}
+
+nav a:hover::after {
+  position: absolute;
+  right: 0;
+  content: "•";
   color: black;
 }
 
 .nav-links {
   display: flex;
+  justify-content: flex-end;
   align-items: center;
   gap: 20px;  
   list-style: none;
