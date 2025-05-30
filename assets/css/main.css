@@ -2,7 +2,7 @@
   License: none (public domain)
 */
 
-/* Reset CSS 
+/* Reset CSS */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -45,13 +45,38 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-*/
+
+/* Custom CSS */
+
+h2 {
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+
+p {
+  padding: 10px 0;
+}
+
 header, footer {
   align-items: center;
   padding: 0;
-  background-color: #fbfbfb;
+  background-color: #dbdbdb;
   width: 100%;
   margin: 0;
+}
+
+header {
+  position: fixed;
+  height: 180px;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  border-bottom: 1px dotted #6e6e6e;
+}
+
+footer {
+  border-top: 1px dotted #6e6e6e;
 }
 
 header > div {
@@ -72,7 +97,8 @@ footer > div {
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;  
@@ -80,6 +106,7 @@ body {
   background-color: #fff;
   color: #333;
   line-height: 1.6;
+  padding-top: 200px;
 }
 
 * {
@@ -89,7 +116,6 @@ body {
 }
 
 .navbar {
-  background-color: #eee;
   color: #000;
   padding: 5px;
   display: flex;
@@ -99,34 +125,47 @@ body {
 
 .brand {
   display: flex;
-  align-items: center;
   font-size: 24px;
   font-weight: bold;
   width: 35%;
+  align-items: center;
 }
 
 .photo {
   width: 125px;
   border-radius: 50%;
+  border: 2px solid #5e5e5e;
   margin-right: 10px;
 }
 
 .name {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Titillium", sans-serif;
   font-weight: 200;
-  font-style: normal;
-  font-size: 32px;
-  color: #333;
+  font-size: 40px;
+  color: #000000;
   margin: 0;
   padding: 0;
 }
 
 .title {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 200;
   font-size: 16px;
-  align-self: center;
-  color: #666;
+  color: #0f0f0f;
   margin: 0;
+  padding: 0 10px;
+}
+
+.name-title {
   padding: 0;
+  margin: 0;
+}
+
+.content {
+  background-color: #f9f9f9;
+  border: #dfdfdf solid 1px;
+  border-radius: 15px;
+  padding: 10px 20px;
 }
 
 nav {
@@ -137,10 +176,14 @@ nav {
 }
 
 section {
+  scroll-margin-top: 200px;
   margin: 25px 0;
 }
 
 nav a {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
   text-decoration: none;
   color: #555;
   padding: 10px;
@@ -169,9 +212,12 @@ nav a:hover {
 .project-panel {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
   justify-content: center;
   align-items: stretch;
+  background-color: #f9f9f9;
+  border: #dfdfdf solid 1px;
+  border-radius: 15px;
+  padding: 10px 20px;
 }
 
 .project-header {
@@ -186,6 +232,7 @@ nav a:hover {
   flex-direction: column; 
   width: calc(33.333% - 20px);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px;
 }
 
 .project:hover {
@@ -197,8 +244,10 @@ nav a:hover {
 }
 
 .project > a {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
   text-decoration: none;
-  font-weight: 400;
+  font-weight: 500;
   color: #000;
 }
 
