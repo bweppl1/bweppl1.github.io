@@ -70,8 +70,9 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font: 
 }
+
+
 
 .navbar {
   background-color: #eee;
@@ -111,7 +112,45 @@ nav a {
 
 .nav-links {
   display: flex;
+  align-items: center;
   gap: 20px;  
   list-style: none;
   margin-right: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-panel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.project-header {
+  width: 90%;
+}
+
+.project {
+  background-color: #F1F1F1;
+  border: 1px solid #CCC;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column; 
+  width: 30%;
+  padding: 10px;
+  box-sizing: border-box
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
 }
