@@ -262,8 +262,18 @@ nav a:hover::before {
 }
 
 .project-tags {
+  display: inline-block;
+  padding: 0 10px;
   font-size: 12px;
   font-weight: 500;
+}
+
+.project-tags li:not(:first-child)::before {
+  content: "-";
+  margin: 0 5px;
+  position: absolute;
+  left: -10px;
+  color: #000;
 }
 
 .project:hover {
