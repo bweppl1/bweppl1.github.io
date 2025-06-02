@@ -68,10 +68,9 @@ header, footer {
 
 header {
   position: fixed;
-  height: 180px;
   top: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 1;
   border-bottom: 1px dotted #6e6e6e;
 }
 
@@ -106,7 +105,7 @@ body {
   background-color: #fff;
   color: #333;
   line-height: 1.6;
-  padding-top: 200px;
+  padding-top: 60px;
 }
 
 * {
@@ -127,19 +126,12 @@ a:hover {
 
 .navbar {
   color: #000;
-  padding: 5px;
+  padding: 5px 200px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
-.brand {
-  display: flex;
-  font-size: 24px;
-  font-weight: bold;
-  width: 35%;
-  align-items: center;
-}
 
 .photo {
   width: 150px;
@@ -151,25 +143,12 @@ a:hover {
 .name {
   font-family: "Source Sans 3", sans-serif;
   font-weight: 800;
-  font-size: 40px;
+  font-size: 24px;
   color: #000000;
   margin: 0;
   padding: 0;
 }
 
-.title {
-  font-family: "Source Sans 3", sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  color: #0f0f0f;
-  margin: 0;
-  padding: 0 10px;
-}
-
-.name-title {
-  padding: 0;
-  margin: 0;
-}
 
 .content {
   background-color: #f9f9f9;
@@ -187,7 +166,9 @@ nav {
 
 section {
   scroll-margin-top: 200px;
-  margin: 25px 0;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 nav a {
@@ -197,17 +178,12 @@ nav a {
   font-weight: 500;
   text-decoration: none;
   color: #555;
-  padding: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 0;
 }
 
 nav a:hover {
   color: #000;
-}
-
-nav a:hover::before {
-
+  border-bottom: 2px dotted #000;
 }
 
 .nav-links {
@@ -220,8 +196,6 @@ nav a:hover::before {
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
   width: 70%;
   max-width: 1200px;
   margin: 0 auto;
@@ -229,14 +203,24 @@ nav a:hover::before {
 
 .project-panel {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: stretch;
   background-color: #f9f9f9;
   border: #dfdfdf solid 1px;
   border-radius: 15px;
   padding: 10px 20px;
-  margin: 0;
+}
+
+@media screen and (max-width: 960px) {
+  .project-panel {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section.project-panel div.project {
+    width: calc(100% - 20px);
+  }
 }
 
 .project-header {
@@ -262,17 +246,17 @@ nav a:hover::before {
 }
 
 .project-tags {
-  display: inline-block;
+  display: flex;
   padding: 0 10px;
   font-size: 12px;
   font-weight: 500;
+  font-style: italic;
 }
 
-.project-tags li:not(:first-child)::before {
-  content: "-";
-  margin: 0 5px;
-  position: absolute;
-  left: -10px;
+.project-tags li:not(:last-child)::after {
+  content: " • ";
+  margin-left: 5px;
+  margin-right: 9px;
   color: #000;
 }
 
