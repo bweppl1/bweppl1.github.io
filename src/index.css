@@ -8,15 +8,3 @@ html {
 body {
   font-family: 'VT323', monospace;
 }
-
-/* Use this if repeat styling in a manner that components can't be used */
-/* 
-@layer components {
-  .dark-button {
-    background-color: #000;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-  }
-} */
