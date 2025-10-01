@@ -24,17 +24,33 @@ const NavBar = () => {
             : "hidden"
         } md:flex md:flex-row md:gap-15 items-center md:mx-15`}
       >
-        <a href="#about" className="hover:bg-white hover:text-black m-0 px-2">
+        <a
+          href="#about"
+          className="hover:bg-white hover:text-black m-0 px-2 py-1"
+        >
           about_me
         </a>
         <a
           href="#projects"
-          className="hover:bg-white hover:text-black m-0 px-2"
+          className="hover:bg-white hover:text-black m-0 px-2 py-1"
         >
           projects
         </a>
-        <a href="#contact" className="hover:bg-white hover:text-black m-0 px-2">
-          contact
+        <a
+          href="../assets/documents/resume_brent_weppler.pdf"
+          className="hover:bg-white hover:text-black m-0 px-2 py-1"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          resume
+        </a>
+        <a
+          href="https://github.com/bweppl1"
+          className="hover:bg-white hover:text-black m-0 p-2"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaGithub />
         </a>
       </div>
     </div>
