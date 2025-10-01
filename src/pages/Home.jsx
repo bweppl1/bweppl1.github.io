@@ -45,8 +45,10 @@ const projects = [
 
 const Home = () => {
   return (
-    <div className="flex flex-col max-w-screen-lg mx-auto mt-2 px-2">
-      <h2 className="bg-black text-white px-2 w-fit">about_me</h2>
+    <div className="pt-14 flex flex-col max-w-screen-lg mx-auto mt-2 px-2">
+      <h2 id="about" className="bg-black text-white px-2 w-fit">
+        about_me
+      </h2>
       <div className="flex flex-col gap-4 border-1 border-black leading-5 p-3 text-lg mb-4">
         <p>
           I'm a fullstack developer with a Bachelor's Degree in Computer
@@ -59,7 +61,9 @@ const Home = () => {
           your problems.
         </p>
       </div>
-      <h2 className="bg-black text-white px-2 w-fit">projects</h2>
+      <h2 id="projects" className="bg-black text-white px-2 w-fit">
+        projects
+      </h2>
       <div className="flex flex-col md:flex-wrap md:flex-row gap-4 justify-evenly border-1 border-black leading-5 p-3 text-lg mb-4">
         {projects.map((project, index) => (
           <ProjectCard key={index} index={index} {...project} />

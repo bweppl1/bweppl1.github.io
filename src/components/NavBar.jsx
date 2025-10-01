@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { FaLinkedin, FaGithub, FaEnvelope, FaBars } from "react-icons/fa";
+import { useState, useEffect } from "react";
+import { FaGithub, FaBars } from "react-icons/fa";
 
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -8,8 +8,21 @@ const NavBar = () => {
     setMenuOpen(!menuOpen);
   };
 
+  // Close mobile menu if left open while resizing to desktop width - should only happen if someone is trying to break it
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 768) {
+        setMenuOpen(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
-    <div className="flex justify-between items-center text-white max-w-screen-lg mx-auto mt-4 bg-black px-2">
+    <div className="flex justify-between items-center text-white max-w-screen-lg mx-auto mt-4 bg-black px-2 fixed top-0 left-1/2 -translate-x-1/2 w-full z-50">
       <h1 className="text-lg">
         <a href="/" className="m-0 p-0">
           BRENT WEPPLER
@@ -20,7 +33,7 @@ const NavBar = () => {
         id="menu"
         className={`${
           menuOpen
-            ? "flex flex-col absolute top-11 right-0 gap-3 w-full bg-black opacity-90 z-50"
+            ? "flex flex-col absolute top-7 right-0 gap-3 w-full bg-black opacity-90 z-50"
             : "hidden"
         } md:flex md:flex-row md:gap-15 items-center md:mx-15`}
       >
@@ -37,7 +50,7 @@ const NavBar = () => {
           projects
         </a>
         <a
-          href="../assets/documents/resume_brent_weppler.pdf"
+          href="src/assets/documents/Resume_Brent_Weppler.pdf"
           className="hover:bg-white hover:text-black m-0 px-2 py-1"
           target="_blank"
           rel="noopener noreferrer"
