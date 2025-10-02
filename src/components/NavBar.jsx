@@ -50,7 +50,7 @@ const NavBar = () => {
           projects
         </a>
         <a
-          href="src/assets/documents/Resume_Brent_Weppler.pdf"
+          href="https://drive.google.com/file/d/1-Nb862_8T519QgJpt4dk3r7sZoOncJKM/view?usp=sharing"
           className="hover:bg-white hover:text-black m-0 px-2 py-1"
           target="_blank"
           rel="noopener noreferrer"
