@@ -13,7 +13,7 @@ const projects = [
     tech: "React(TypeScript), Node.js, Supabase Auth & PostgreSQL",
     image: northAtelier,
     github: "https://north-atelier.vercel.app/",
-    link: "https://github.com/bweppl1/north-atelier",
+    link: "https://north-atelier.vercel.app/",
   },
   {
     title: "Toddler Learning Web-App",
