@@ -12,7 +12,7 @@ const projects = [
       "Created for a leatherworking business. Authentication & Cart system.",
     tech: "React(TypeScript), Node.js, Supabase Auth & PostgreSQL",
     image: northAtelier,
-    github: "https://github.com/bweppl1/north-atelier",
+    github: "https://north-atelier.vercel.app/",
     link: "https://github.com/bweppl1/north-atelier",
   },
   {
