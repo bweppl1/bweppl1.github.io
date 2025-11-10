@@ -1,4 +1,4 @@
-import ProgrammingLog from "./pages/ProgrammerLog";
+import ProgrammerLog from "./pages/ProgrammerLog";
 import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
