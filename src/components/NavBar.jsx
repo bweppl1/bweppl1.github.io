@@ -58,10 +58,10 @@ const NavBar = () => {
           resume
         </a>
         <a
-          href="/programminglog"
+          href="/programmerlog"
           className="hover:bg-white hover:text-black m-0 px-2 py-1"
         >
-          progamming.log
+          programmer.log
         </a>
         <a
           href="https://github.com/bweppl1"
