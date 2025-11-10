@@ -38,13 +38,13 @@ const NavBar = () => {
         } md:flex md:flex-row md:gap-15 items-center md:mx-15`}
       >
         <a
-          href="#about"
+          href="/#about"
           className="hover:bg-white hover:text-black m-0 px-2 py-1"
         >
           about_me
         </a>
         <a
-          href="#projects"
+          href="/#projects"
           className="hover:bg-white hover:text-black m-0 px-2 py-1"
         >
           projects
@@ -56,6 +56,12 @@ const NavBar = () => {
           rel="noopener noreferrer"
         >
           resume
+        </a>
+        <a
+          href="/programminglog"
+          className="hover:bg-white hover:text-black m-0 px-2 py-1"
+        >
+          progamming.log
         </a>
         <a
           href="https://github.com/bweppl1"
