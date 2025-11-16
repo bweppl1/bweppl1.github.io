@@ -1,4 +1,3 @@
-import React from "react";
 import ProjectCard from "../components/ProjectCard";
 import northAtelier from "../assets/images/north_atelier.png";
 import toddlerLearning from "../assets/images/toddler_learning.png";
