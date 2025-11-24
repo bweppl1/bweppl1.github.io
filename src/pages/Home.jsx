@@ -56,8 +56,11 @@ const Home = () => {
           learning.
         </p>
         <p>
-          Check out my projects below to see how my skills can be applied to
-          your problems.
+          I'm created projects to assist with physician decision making when
+          considering diagnostic cardiac catheterization, assist language
+          learners in the early stages of vocabulary building and teaching
+          toddlers to spell and type. Check out my projects below, as well as my
+          blog to see what I'm currently learning and working on!
         </p>
       </div>
       <h2 id="projects" className="bg-black text-white px-2 w-fit">
