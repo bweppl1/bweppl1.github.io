@@ -58,7 +58,7 @@ const NavBar = () => {
           resume
         </a>
         <a
-          href="/programmerlog"
+          href="/#programmerlog"
           className="hover:bg-white hover:text-black m-0 px-2 py-1"
         >
           programmer.log

@@ -1,13 +1,78 @@
 import { useState } from "react";
+import { FaAngleDown } from "react-icons/fa";
 
 const LogEntry = () => {
+  const handleToggleBlogWindow = () => {
+    const blogWindow = document.getElementById("blog1");
+    blogWindow.classList.toggle("hidden");
+  };
   const [title, setTitle] = useState("");
   return (
     <div className="flex flex-col max-w-screen-lg mx-auto mt-2 px-2">
-      <h2 className="bg-black text-white px-2 w-fit">
-        Sunday, November 9, 2025
+      <h2 className="bg-black text-white px-2 w-fit flex">
+        Sunday, November 24, 2025
+        <FaAngleDown onClick={handleToggleBlogWindow} />
       </h2>
-      <div className="flex flex-col gap-4 border-1 border-black leading-5 p-3 text-lg mb-4">
+      <div
+        id="blog2"
+        className="flex flex-col gap-4 border border-black leading-5 p-3 text-lg mb-4"
+      >
+        <p>
+          Continuing to work through Blind 75 this week, spending time each day
+          studying the problems, and knocking rust off my python. I solved my
+          first hard leetcode yesterday, only to get stumped by an easy
+          immediately after. I blame it on being tired after a weekend of late
+          night with the sick kiddos, for sure that's why.. definitely..
+        </p>
+        <p>
+          Nearly finished reading OSTEP, I want to make sure I retain as much as
+          I can from this book. What an amazing read it's been so far. I have to
+          be sure to go over my notes and revisit the core ideas from each
+          section before continuing on to the next book.
+        </p>
+        <p>
+          I will focus a section of my nights on cleaning up this portfolio and
+          my project READMEs, as I think they are currently doing a poor job of
+          presenting my projects to viewers. Going forward I may turn these
+          programmer logs into more point form. Have to optimize time!
+        </p>
+      </div>
+      <h2 className="bg-black text-white px-2 w-fit flex">
+        Sunday, November 16, 2025
+        <FaAngleDown onClick={handleToggleBlogWindow} />
+      </h2>
+      <div
+        id="blog2"
+        className="flex flex-col gap-4 border border-black leading-5 p-3 text-lg mb-4"
+      >
+        <p>
+          This week working I've spent most nights working through the 3rd
+          "step" of OSTEP. Reading about data persistence, file systems, and the
+          history of how we arrived at modern storage systems. Some refreshers
+          on what I learned in the Linux Essentials course at WGU.
+        </p>
+        <p>
+          Coding-wise I'm reworking through Blind 75 on NeetCode this time
+          focusing more on optimizing my solutions, rather than just solving the
+          problems. I want to make sure I complete the entirety of Blind 75 with
+          optimal solutions. I have never completed a hard leetcode problem
+          before.
+        </p>
+        <p>
+          This week is a lot of focus on learning, and not so much building, I
+          want to make sure I start to build a little bit next week. It's going
+          to be important to stay consistent, working on something everyday, to
+          balance all the tasks I need to!
+        </p>
+      </div>
+      <h2 className="bg-black text-white px-2 w-fit flex">
+        Sunday, November 9, 2025
+        <FaAngleDown onClick={handleToggleBlogWindow} />
+      </h2>
+      <div
+        id="blog1"
+        className="flex flex-col gap-4 border border-black leading-5 p-3 text-lg mb-4"
+      >
         <p>
           Starting a log to track my work and development as a software
           developer. Currently I split my time fairly evenly between two

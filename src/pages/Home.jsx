@@ -1,4 +1,5 @@
 import ProjectCard from "../components/ProjectCard";
+import LogEntry from "../components/LogEntry";
 import northAtelier from "../assets/images/north_atelier.png";
 import toddlerLearning from "../assets/images/toddler_learning.png";
 import clozeEncounters from "../assets/images/cloze_encounters.png";
@@ -45,6 +46,7 @@ const projects = [
 const Home = () => {
   return (
     <div className="pt-14 flex flex-col max-w-screen-lg mx-auto mt-2 px-2">
+      {/* ABOUT ME */}
       <h2 id="about" className="bg-black text-white px-2 w-fit">
         about_me
       </h2>
@@ -56,13 +58,14 @@ const Home = () => {
           learning.
         </p>
         <p>
-          I'm created projects to assist with physician decision making when
+          I've created projects to assist with physician decision making when
           considering diagnostic cardiac catheterization, assist language
           learners in the early stages of vocabulary building and teaching
           toddlers to spell and type. Check out my projects below, as well as my
           blog to see what I'm currently learning and working on!
         </p>
       </div>
+      {/* PROJECTS */}
       <h2 id="projects" className="bg-black text-white px-2 w-fit">
         projects
       </h2>
@@ -70,6 +73,13 @@ const Home = () => {
         {projects.map((project, index) => (
           <ProjectCard key={index} index={index} {...project} />
         ))}
+      </div>
+      {/* BLOG */}
+      <h2 id="programmerlog" className="bg-black text-white px-2 w-fit">
+        programmer.log
+      </h2>
+      <div className="flex flex-col md:flex-wrap md:flex-row gap-4 justify-evenly border-1 border-black leading-5 p-3 text-lg mb-4">
+        <LogEntry />
       </div>
     </div>
   );

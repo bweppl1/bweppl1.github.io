@@ -17,12 +17,9 @@ const ProjectCard = ({
 
   return (
     <div className="w-full md:w-[31%] border-1 border-black flex flex-col">
-      <div
-        className="flex justify-between items-center cursor-pointer bg-black text-white px-2"
-        onClick={toggleCardView}
-      >
+      <div className="flex justify-between items-center cursor-pointer bg-black text-white px-2">
         <h1>{`0${index}. ${title}`}</h1>
-        <FaAngleDown />
+        <FaAngleDown onClick={toggleCardView} />
       </div>
 
       <div id={`project-${index}`} className="flex flex-col gap-2">
