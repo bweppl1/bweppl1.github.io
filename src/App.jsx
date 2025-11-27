@@ -1,4 +1,3 @@
-import ProgrammerLog from "./pages/ProgrammerLog";
 import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
 
