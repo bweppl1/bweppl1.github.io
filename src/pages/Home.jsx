@@ -4,15 +4,25 @@ import northAtelier from "../assets/images/north_atelier.png";
 import toddlerLearning from "../assets/images/toddler_learning.png";
 import clozeEncounters from "../assets/images/cloze_encounters.png";
 import heartDisease from "../assets/images/heart_disease.png";
+import pythonClozeEncounters from "../assets/images/python_clozeencounters.png";
 
 const projects = [
+  {
+    title: "ClozeEncounters v2",
+    description:
+      "Gamified Spanish vocab game with a custom spaced repition algorithm.",
+    tech: "Python, FastAPI, PostgreSQL",
+    image: pythonClozeEncounters,
+    github: "https://github.com/bweppl1/ClozeEncounters",
+    link: "https://north-atelier.vercel.app/",
+  },
   {
     title: "E-commerce Store",
     description:
       "Created for a leatherworking business. Authentication & Cart system.",
     tech: "React(TypeScript), Node.js, Supabase Auth & PostgreSQL",
     image: northAtelier,
-    github: "https://north-atelier.vercel.app/",
+    github: "https://github.com/bweppl1/north-atelier",
     link: "https://north-atelier.vercel.app/",
   },
   {

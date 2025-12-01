@@ -16,14 +16,14 @@ const ProjectCard = ({
   };
 
   return (
-    <div className="w-full md:w-[31%] border-1 border-black flex flex-col">
+    <div className="w-full md:w-[31%] border border-black flex flex-col">
       <div className="flex justify-between items-center cursor-pointer bg-black text-white px-2">
         <h1>{`0${index}. ${title}`}</h1>
         <FaAngleDown onClick={toggleCardView} />
       </div>
 
       <div id={`project-${index}`} className="flex flex-col gap-2">
-        <div className="overflow-hidden border-b-1 border-black">
+        <div className="overflow-hidden max-h-40 border-b border-black">
           <img
             src={image}
             alt={title}

@@ -8,7 +8,30 @@ const LogEntry = () => {
   };
   const [title, setTitle] = useState("");
   return (
-    <div className="flex flex-col max-w-screen-lg mx-auto mt-2 px-2">
+    <div className="flex flex-col max-w-5xl mx-auto mt-2 px-2">
+      <h2 className="bg-black text-white px-2 w-fit flex">
+        Sunday, November 30, 2025
+        <FaAngleDown onClick={handleToggleBlogWindow} />
+      </h2>
+      <div
+        id="blog2"
+        className="flex flex-col gap-4 border border-black leading-5 p-3 text-lg mb-4"
+      >
+        <p>
+          Sick the majority of this week. Read some more OSTEP. Worked on a
+          FastAPI and PostgreSQL version of ClozeEncounters. I wanted to make a
+          spaced repetition algorithm myself, and since I've been doing a lot of
+          algorithm problems in Python I decided to make the whole application
+          in Python this time. Once it's fleshed out more I may add a React
+          front end, but currently I'm using a CLI with the Rich package and I
+          enjoy the workflow so much more.
+        </p>
+        <p>
+          Goal for this week is to finish reading OSTEP, work on my Python
+          project 2-3 nights, and work on Blind75 problems every night I'm not
+          working on the project.
+        </p>
+      </div>
       <h2 className="bg-black text-white px-2 w-fit flex">
         Sunday, November 24, 2025
         <FaAngleDown onClick={handleToggleBlogWindow} />
