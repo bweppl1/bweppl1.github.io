@@ -14,7 +14,7 @@ const projects = [
     tech: "Python, FastAPI, PostgreSQL",
     image: pythonClozeEncounters,
     github: "https://github.com/bweppl1/ClozeEncounters",
-    link: "https://north-atelier.vercel.app/",
+    link: "https://youtu.be/HOYMNXihDuE",
   },
   {
     title: "E-commerce Store",
