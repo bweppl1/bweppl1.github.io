@@ -10,6 +10,45 @@ const LogEntry = () => {
   return (
     <div className="flex flex-col max-w-5xl mx-auto mt-2 px-2">
       <h2 className="bg-black text-white px-2 w-fit flex">
+        Monday, December 15, 2025
+        <FaAngleDown onClick={handleToggleBlogWindow} />
+      </h2>
+      <div
+        id="blog2"
+        className="flex flex-col gap-4 border border-black leading-5 p-3 text-lg mb-4"
+      >
+        <p>
+          It's been a busy holiday season! However, I've completed the MVP of
+          the Python version of ClozeEncounters using FastAPI and PostgreSQL. I
+          will likely build a few more features and then decide on how to
+          convert it into a useable application. Currently, being a CLI based
+          frontend, it isn't all that usable for a non-technical person. I'll
+          have to do more reading and decide if I'll build a React frontend for
+          this Python backend or rebuild the old, original NodeJS backend. In
+          the end I want this application to be a free, easy to use, tool for
+          people who want to learn Spanish.
+        </p>
+        <p>
+          I've spent a good portion of my after-work "programming time" working
+          on the job hunt, adjusting my resume and applying to jobs. I know I'll
+          have to focus more on this if I want to get my first developer
+          position. There were a few jobs this week that took over an hour to
+          apply to. Between cleaning my resume, writing a custom Cover Letter
+          for the position, and completing multiple paragraph style application
+          questions. I do wonder if that time is better spent just learning. I
+          can't get a job if I don't apply, and I won't get a job if I don't
+          spend time learning. I'll definitely have to search for a better
+          balance in the future!
+        </p>
+        <p>
+          Over the holiday season I'll work on the last few features I want to
+          complete for the Python ClozeEncounters, and I would really like to
+          spend some time working on Advent of Code, it seems like a fun way to
+          practice my Python outside of the work I've been doing on my personal
+          projects!
+        </p>
+      </div>
+      <h2 className="bg-black text-white px-2 w-fit flex">
         Sunday, November 30, 2025
         <FaAngleDown onClick={handleToggleBlogWindow} />
       </h2>
