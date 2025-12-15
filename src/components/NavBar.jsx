@@ -50,7 +50,7 @@ const NavBar = () => {
           projects
         </a>
         <a
-          href="https://drive.google.com/file/d/1LXy2iYbLg9eOCckeBmM_-TxFp8dhi3gu/view?usp=drive_link"
+          href="https://drive.google.com/file/d/1kY6SlcJrk_b6_ZUYFODF2Mn9D9QXUyWQ/view?usp=drive_link"
           className="hover:bg-white hover:text-black m-0 px-2 py-1"
           target="_blank"
           rel="noopener noreferrer"
