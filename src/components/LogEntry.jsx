@@ -10,6 +10,31 @@ const LogEntry = () => {
   return (
     <div className="flex flex-col max-w-5xl mx-auto mt-2 px-2">
       <h2 className="bg-black text-white px-2 w-fit flex">
+        Sunday, December 21, 2025
+        <FaAngleDown onClick={handleToggleBlogWindow} />
+      </h2>
+      <div
+        id="blog2"
+        className="flex flex-col gap-4 border border-black leading-5 p-3 text-lg mb-4"
+      >
+        <p>
+          This week I created a React Frontend for my Python FastAPI
+          ClozeEncounters. I finished the MVP just before coming to write this.
+          This was my first time not using Node.js for a React app backend. I do
+          prefer working with Python in the backend and I think I'll do it more
+          in the future. I do want to build out a few more features before I
+          build the database up from 100 words to 500 and then I'll deploy a
+          live version. This project has given me a lot better understanding of
+          APIs, PostgreSQL, and I've enjoyed learning about Pydantic and
+          SQLAlchemy.
+        </p>
+        <p>
+          My goal for this week is to deploy the MVP of my React/FastAPI
+          ClozeEncounters to display on my portfolio, and apply for a couple job
+          postings that interest me.
+        </p>
+      </div>
+      <h2 className="bg-black text-white px-2 w-fit flex">
         Monday, December 15, 2025
         <FaAngleDown onClick={handleToggleBlogWindow} />
       </h2>
