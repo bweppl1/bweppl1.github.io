@@ -10,7 +10,7 @@ const LogEntry = () => {
   return (
     <div className="flex flex-col max-w-5xl mx-auto mt-2 px-2">
       <h2 className="bg-black text-white px-2 w-fit flex">
-        Sunday, December 21, 2025
+        Sunday, January 11, 2026
         <FaAngleDown onClick={handleToggleBlogWindow} />
       </h2>
       <div
@@ -32,6 +32,34 @@ const LogEntry = () => {
           My goal for this week is to deploy the MVP of my React/FastAPI
           ClozeEncounters to display on my portfolio, and apply for a couple job
           postings that interest me.
+        </p>
+      </div>
+      <h2 className="bg-black text-white px-2 w-fit flex">
+        Sunday, December 21, 2025
+        <FaAngleDown onClick={handleToggleBlogWindow} />
+      </h2>
+      <div
+        id="blog2"
+        className="flex flex-col gap-4 border border-black leading-5 p-3 text-lg mb-4"
+      >
+        <p>
+          I've been busy with holidays and my daughter's 5th birthday! I have
+          made some progress on ClozeEncounters Full stack application. I was
+          finally able to get the Auth figured out, and Now have a functioning
+          MVP with Auth so I can start working on progress saving to the signed
+          in user and having a 'Stats' page. Progress on this will be on hold
+          because tomorrow I'm starting my first hackathon. The hackathon is
+          being put on by DonTheDeveloper, a software developer I've been
+          watching on youtube since I started. He has a view of AI that aligns
+          well with my perspective and I think this is a great way for my to
+          enter my first hackathon as it's a requirement to not use AI generated
+          code, which is a focus of my learning philosophy right now.
+        </p>
+        <p>
+          My plan for the hackathon is to create a flashcard style spelling and
+          reading game that my daughters can use. Using React, FastAPI and
+          PostgreSQL I'll get more reps in with this stack and become more
+          comfortable creating functioning full stack applications from scratch.
         </p>
       </div>
       <h2 className="bg-black text-white px-2 w-fit flex">
