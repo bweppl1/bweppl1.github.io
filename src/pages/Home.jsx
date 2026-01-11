@@ -25,15 +25,15 @@ const projects = [
     github: "https://github.com/bweppl1/north-atelier",
     link: "https://north-atelier.vercel.app/",
   },
-  {
-    title: "Toddler Learning Web-App",
-    description:
-      "Customizable learning games for kids. Made with the MERN stack.",
-    tech: "React(JavaScript), Node.js, Express, MongoDB, Vercel",
-    image: toddlerLearning,
-    github: "https://github.com/bweppl1/toddler-learning-games",
-    link: "https://toddler-learning-games.vercel.app/",
-  },
+  // {
+  //   title: "Toddler Learning Web-App",
+  //   description:
+  //     "Customizable learning games for kids. Made with the MERN stack.",
+  //   tech: "React(JavaScript), Node.js, Express, MongoDB, Vercel",
+  //   image: toddlerLearning,
+  //   github: "https://github.com/bweppl1/toddler-learning-games",
+  //   link: "https://toddler-learning-games.vercel.app/",
+  // },
   {
     title: "Cloze Encounters",
     description: "Spanish learning app using cloze-style questions.",
